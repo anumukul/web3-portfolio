@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Instagram, ExternalLink, Sun, Moon, Mail, MapPin, Calendar } from "lucide-react"
@@ -768,7 +768,6 @@ export default function Portfolio() {
           </Button>
         </div>
 
-        {/* Footer */}
         <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-700/50 bg-slate-900/50 backdrop-blur-xl">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
