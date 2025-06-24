@@ -221,7 +221,6 @@ export default function Portfolio() {
           </div>
         </nav>
 
-       
         <section id="home" className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[90vh]">
@@ -347,16 +346,13 @@ export default function Portfolio() {
           </div>
         </section>
 
-        
         {isContactModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center">
-            
             <div
               className="absolute inset-0 bg-black/50 backdrop-blur-sm"
               onClick={() => setIsContactModalOpen(false)}
             ></div>
 
-           
             <div className="relative bg-white text-gray-900 rounded-3xl p-8 w-full max-w-md mx-4 shadow-2xl">
               <div className="text-center pb-4">
                 <h2 className="text-2xl font-bold text-blue-400 mb-2">Contact Me</h2>
@@ -507,15 +503,6 @@ export default function Portfolio() {
                             <ExternalLink className="w-4 h-4 mr-1" />
                             Website
                           </Link>
-                          {exp.certificate && (
-                            <Link
-                              href={exp.certificate}
-                              className="inline-flex items-center text-blue-400 hover:text-cyan-400 transition-colors"
-                            >
-                              <ExternalLink className="w-4 h-4 mr-1" />
-                              Certificate
-                            </Link>
-                          )}
                         </div>
                       </div>
                     </div>
