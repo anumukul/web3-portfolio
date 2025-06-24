@@ -13,7 +13,6 @@ import { Badge } from "@/components/ui/badge"
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(true)
   const [activeSection, setActiveSection] = useState("home")
-  const [scrollY, setScrollY] = useState(0)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -81,12 +80,6 @@ export default function Portfolio() {
     }))
   }
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   const experiences = [
     {
       company: "Anabi.aI",
@@ -132,7 +125,7 @@ export default function Portfolio() {
     {
       title: "Recall-a memory-jogging Chrome extension",
       description:
-        "Pioneered a memory-jogging Chrome extension to support Alzheimer's patients with personalized, contextual prompts. Built a full-stack system using Next.js, PostgreSQL, NextAuth, and TypeScript to deliver secure and responsive performance. Enabled dynamic, user-specific content customization for over 100 users, and optimized image handling with Cloudinary to reduce latency by 60%.",
+        "Pioneered a memory-jogging Chrome extension to support Alzheimer&apos;s patients with personalized, contextual prompts. Built a full-stack system using Next.js, PostgreSQL, NextAuth, and TypeScript to deliver secure and responsive performance. Enabled dynamic, user-specific content customization for over 100 users, and optimized image handling with Cloudinary to reduce latency by 60%.",
       image: "/Recall.png?height=200&width=400",
       demo: "https://recall-sepia-nine.vercel.app/",
       github: "https://github.com/anumukul/recall",
@@ -253,8 +246,8 @@ export default function Portfolio() {
                 </div>
 
                 <p className="text-lg text-gray-300 leading-relaxed max-w-2xl">
-                  Hey there! I'm a blockchain developer passionate about DeFi protocols, Web3 innovation, and
-                  decentralized technologies. My goal? Building software that doesn't just function—but transforms how
+                  Hey there! I&apos;m a blockchain developer passionate about DeFi protocols, Web3 innovation, and
+                  decentralized technologies. My goal? Building software that doesn&apos;t just function—but transforms how
                   we interact with the digital world. Ready to connect and craft something revolutionary together.
                 </p>
 
