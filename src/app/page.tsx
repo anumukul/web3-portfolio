@@ -141,6 +141,15 @@ export default function Portfolio() {
       github: "https://github.com/anumukul/Ethereum-staking-Dapp-frontend",
       tags: ["NextJs", "PostgreSQL", "TypeScript"],
     },
+    {
+      title: "ERC-20 Token",
+      description:
+        "A complete, production-ready ERC-20 token implementation with a modern React frontend, featuring the Indian Rupee (INR) token with comprehensive Web3 functionality.",
+      image: "/ERC20.png?height=200&width=400",
+      demo: "https://erc-20-token-six.vercel.app/",
+      github: "https://github.com/anumukul/ERC-20-Token-",
+      tags: ["NextJs", "PostgreSQL", "TypeScript"],
+    },
   ]
 
   const skills = [
