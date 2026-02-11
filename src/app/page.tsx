@@ -43,6 +43,22 @@ export default function Portfolio() {
       image: "/Web developer.jpg?height=300&width=300",
       issuer: "Udemy",
     },
+    {
+      title: "Ethereum Learner",
+      image: "/Learner.png?height=300&width=300",
+      issuer: "HackQuest",
+    },
+    {
+      title: "Ethereum Builder",
+      image: "/Builder.png?height=300&width=300",
+      issuer: "HackQuest",
+    },
+
+    {
+      title: "Starknet Basecamp 13 Graduate",
+      image: "/Starknet.png?height=300&width=300",
+      issuer: "Starknet Foundation",
+    },
   ]
 
   const nextCertificate = () => {
@@ -92,18 +108,44 @@ export default function Portfolio() {
       website: "https://anabi.ai/",
       isActive: false,
     },
+    {
+      company: "OnlyDust",
+      logo: "/OnlyDust.png?height=60&width=60",
+      position: "Open Source Contributor",
+      duration: "August 2025 - December 2025",
+      location: "Remote",
+      description:
+        "Actively contributed to multiple open source repositories on the OnlyDust platform, successfully merging 20+ pull requests across various projects. Primarily focused on JavaScript and TypeScript contributions, with significant participation during their OSS Wave programs. Additionally contributed to Ctrl+g Projects by creating and providing training data in the form of programming problems across multiple languages including Go, Rust, and C++, helping train frontier AI models for code generation and problem-solving capabilities.",
+      website: "https://onlydust.com/",
+      isActive: false,
+    },
+    {
+      company: "Drips Network",
+      logo: "/Drips.png?height=60&width=60",
+      position: "Open Source Contributor",
+      duration: "Jan 2026 - Present",
+      location: "Remote",
+      description:
+        "Contributing to multiple open source projects under the Stellar Wave initiative. Successfully merged 5 pull requests during the Day 10 Stellar Wave, working on projects that have received grants from the Stellar Development Foundation. Supporting ecosystem development through code contributions and collaboration with grant-funded teams.",
+      website: "https://www.drips.network/",
+      isActive: true,
+    },
   ]
 
   const projects = [
+
+
     {
-      title: "Decentrazlized Exchange",
+      title: "ERC-20 Token",
       description:
-        "Built a decentralized exchange (DEX) enabling users to connect MetaMask wallets and seamlessly swap ERC-20 tokens on the Ethereum blockchain. Utilized Ethers.js for reliable blockchain interactions and Hardhat for efficient smart contract development and deployment. Designed a secure, gas-optimized frontend with React to ensure a smooth and intuitive user experience.",
-      image: "/DEX.png?height=200&width=400",
-      demo: "https://decentralized-exchange-peach.vercel.app/",
-      github: "https://decentralized-exchange-peach.vercel.app/",
-      tags: ["Reactjs", "Ethereum", "Soldity"],
+        "Production-ready ERC-20 token (Indian Rupee, symbol INR) with full standard compliance: transfer, approve, transferFrom, balance queries, and event emissions. Modern React DApp built with TypeScript and Tailwind CSS, featuring RainbowKit wallet integration, Wagmi hooks for real-time blockchain data, persistent transaction history, and real-time event monitoring. Deployed on Sepolia testnet. Smart contracts developed with Hardhat and OpenZeppelin; frontend includes TokenDashboard, TransferForm, ApprovalManager, BalanceChecker, and TransactionHistory components with glassmorphism UI.",
+      image: "/ERC20.png?height=200&width=400",
+      demo: "https://erc-20-token-six.vercel.app/",
+      github: "https://github.com/anumukul/ERC-20-Token-",
+      tags: ["ERC-20", "React", "TypeScript", "Tailwind", "Hardhat", "Solidity"],
     },
+    
+
     {
       title: "Decentralized Healthcare Management System",
       description:
@@ -113,43 +155,49 @@ export default function Portfolio() {
       github: "https://github.com/anumukul/healthCare-Dapp",
       tags: ["Ethereum", "Healthcare", "Reactjs", "Solidity"],
     },
+
     {
-      title: "TrackBit-Cryptocurrency Tracker",
+      title: "Decentrazlized Exchange",
       description:
-        "Developed a responsive web application for real-time cryptocurrency price tracking and market analysis. Built with React and Vite for fast performance and smooth development using hot module replacement. Implemented portfolio visualization and trend monitoring with modern JavaScript, CSS, and responsive UI design.",
-      image: "/TrackBit.png?height=200&width=400",
-      demo: "https://track-bit.vercel.app/",
-      github: "https://github.com/anumukul/TrackBit",
-      tags: ["Web3", "React", "Crypto"],
-    },
-    {
-      title: "Recall-a memory-jogging Chrome extension",
-      description:
-        "Pioneered a memory-jogging Chrome extension to support Alzheimer&apos;s patients with personalized, contextual prompts. Built a full-stack system using Next.js, PostgreSQL, NextAuth, and TypeScript to deliver secure and responsive performance. Enabled dynamic, user-specific content customization for over 100 users, and optimized image handling with Cloudinary to reduce latency by 60%.",
-      image: "/Recall.png?height=200&width=400",
-      demo: "https://recall-sepia-nine.vercel.app/",
-      github: "https://github.com/anumukul/recall",
-      tags: ["NextJs", "PostgreSQL", "TypeScript"],
+        "Built a decentralized exchange (DEX) enabling users to connect MetaMask wallets and seamlessly swap ERC-20 tokens on the Ethereum blockchain. Utilized Ethers.js for reliable blockchain interactions and Hardhat for efficient smart contract development and deployment. Designed a secure, gas-optimized frontend with React to ensure a smooth and intuitive user experience.",
+      image: "/DEX.png?height=200&width=400",
+      demo: "https://decentralized-exchange-peach.vercel.app/",
+      github: "https://decentralized-exchange-peach.vercel.app/",
+      tags: ["Reactjs", "Ethereum", "Soldity"],
     },
 
     {
-      title: "ETH-Staking Dapp",
+      title: "Staking Protocol",
       description:
-        "A full-stack Ethereum dApp that allows users to stake tokens with flexible and locked APY options. It features wallet integration, staking/unstaking logic, and real-time token tracking. The frontend is built with React.js, and the backend includes Solidity smart contracts and Hardhat for deployment and testing.",
+        "A decentralized staking platform that allows users to stake ERC20 tokens and earn rewards on the Ethereum Sepolia testnet. Implemented secure Solidity smart contracts with reentrancy protection, automatic reward calculation, and continuous distribution model. Built a modern Next.js frontend with RainbowKit for wallet connection, Wagmi hooks for contract interactions, and real-time balance and reward tracking.",
       image: "/Staking.png?height=200&width=400",
-      demo: "https://ethereum-staking-dapp-frontend.vercel.app/",
-      github: "https://github.com/anumukul/Ethereum-staking-Dapp-frontend",
-      tags: ["NextJs", "PostgreSQL", "TypeScript"],
+      demo: "https://staking-project-rosy.vercel.app/",
+      github: "https://github.com/anumukul/Staking-Project-",
+      tags: ["NextJs", "Solidity", "Ethereum", "Wagmi", "TypeScript"],
     },
+
     {
-      title: "ERC-20 Token",
+      title: "VoteOnChain",
       description:
-        "A complete, production-ready ERC-20 token implementation with a modern React frontend, featuring the Indian Rupee (INR) token with comprehensive Web3 functionality.",
-      image: "/ERC20.png?height=200&width=400",
-      demo: "https://erc-20-token-six.vercel.app/",
-      github: "https://github.com/anumukul/ERC-20-Token-",
-      tags: ["NextJs", "PostgreSQL", "TypeScript"],
+        "An advanced on-chain governance dApp for Ethereum that enables users to create proposals, vote with token balance or delegated power, and execute outcomes on the Sepolia testnet. Built with Solidity smart contracts featuring ERC20 governance tokens, voting system with quorum requirements, and optional target contract execution. Developed a modern Next.js frontend with RainbowKit, Wagmi, and Viem for seamless wallet integration, proposal management, delegation system, and real-time voting results.",
+      image: "/VoteOnchain.png?height=200&width=400",
+      demo: "https://vote-on-chain.vercel.app/",
+      github: "https://github.com/anumukul/VoteOnChain",
+      tags: ["NextJs", "Solidity", "Ethereum", "Hardhat", "TypeScript", "Wagmi"],
     },
+
+    {
+      title: "Uniswap V1 Clone",
+      description:
+        "A complete recreation of Uniswap V1, the first version of the popular decentralized exchange protocol. Converted the original Vyper contracts to Solidity while maintaining exact functionality and economic model. Implemented core features including token swaps using constant product formula (x * y = k), liquidity provision and removal, exchange creation via factory pattern, and 0.3% trading fee distribution. Built a modern Next.js frontend with Wagmi and Viem for seamless wallet integration, real-time price calculations, and comprehensive liquidity management interface.",
+      image: "/UniswapV1.png?height=200&width=400",
+      demo: "https://uniswap-v1-clone-ruby.vercel.app/",
+      github: "https://github.com/anumukul/Uniswap-v1-Clone",
+      tags: ["NextJs", "Solidity", "Ethereum", "DeFi", "TypeScript", "Wagmi"],
+    },
+    
+   
+    
   ]
 
   const skills = [
@@ -174,6 +222,57 @@ export default function Portfolio() {
     duration: "Dec 2021 - May 2025",
     coursework: ["Data structures and algorithms (CSE201)", "Principles of Blockchain Technologies (CSO506)"],
   }
+
+  const hackathons: Array<{
+    title: string
+    logo: string
+    projectTitle: string
+    projectDescription: string
+    projectImage: string
+    github: string
+    demo: string
+  }> = [
+    {
+      title: "EthGlobal New Delhi 2025",
+      logo: "/EthGlobal.jpeg?height=60&width=60",
+      projectTitle: "ROSCA-Guard",
+      projectDescription:
+        "A privacy-preserving identity verification platform for decentralized Rotating Savings and Credit Associations (ROSCAs) powered by Self Protocol and PYUSD. Revolutionizes traditional rotating savings circles by combining blockchain technology with zero-knowledge identity verification. Features include zero-knowledge KYC using Self Protocol (Passport & Aadhaar support), PYUSD integration for stablecoin-based automated payments, cross-chain architecture with KYC on Celo and ROSCA operations on Ethereum, smart contract automation, reputation system for merit-based payout selection, and DeFi yield generation on pooled funds.",
+      projectImage: "/ROSCA.png?height=200&width=400",
+      github: "https://github.com/anumukul/ROSCA-Guard",
+      demo: "https://rosca-guard.vercel.app/",
+    },
+    {
+      title: "Somnia DeFi Hackathon 2025",
+      logo: "/Somnia.jpg?height=60&width=60",
+      projectTitle: "PixelVerse",
+      projectDescription:
+        "A real-time collaborative NFT canvas platform with live analytics overlay, deployed on the Somnia blockchain. Enables multiple users to collaborate simultaneously on a shared pixel canvas, creating unique NFT artworks together. Features real-time synchronization, live analytics dashboard showing participation metrics, NFT minting capabilities, and seamless blockchain integration for transparent ownership and trading.",
+      projectImage: "/PixelVerse.png?height=200&width=400",
+      github: "https://github.com/anumukul/PixelVerse",
+      demo: "https://pixel-verse-hazel.vercel.app/",
+    },
+    {
+      title: "Movement M1 Hackathon 2025",
+      logo: "/Movement.jpeg?height=60&width=60",
+      projectTitle: "StreamGift",
+      projectDescription:
+        "A social DeFi primitive that combines real-time salary streaming with viral social gifting. Users can stream tokens to anyone using just their Twitter handle or email address, and recipients can claim accumulated funds instantly with zero gas fees. Built on Movement Network using Move language smart contracts, featuring embedded wallets via Privy, gasless transactions through Shinami sponsorship, and seamless social verification. Enables continuous money streams to any Twitter handle or email with recipients claiming anytime without needing a wallet.",
+      projectImage: "/StreamGift.png?height=200&width=400",
+      github: "https://github.com/anumukul/StreamGift",
+      demo: "#",
+    },
+    {
+      title: "EthGlobal HackMoney 2026",
+      logo: "/EthGlobal.jpeg?height=60&width=60",
+      projectTitle: "Abyss Protocol",
+      projectDescription:
+        "A comprehensive decentralized finance (DeFi) trading platform built on the Sui blockchain, featuring real-time market analytics, advanced trading tools, multi-chain intelligence, and privacy-preserving intent-based trading. Integrates with DeepBook V3, Mysten Seal, and NEAR Protocol. Features include Telegram bot for natural language trading commands, professional trading terminal with instant swaps, limit orders, flash arbitrage, and margin trading, AI-powered multi-chain agent supporting 15+ blockchains, real-time market indexer with DeepBook V3 analytics, zkLogin authentication for passwordless access, and private intent trading with encrypted conditional strategies.",
+      projectImage: "/Abyss.png?height=200&width=400",
+      github: "https://github.com/Naveen-6087/sui-tma",
+      demo: "https://sui-tma.vercel.app/",
+    },
+  ]
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId)
@@ -202,7 +301,7 @@ export default function Portfolio() {
 
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-8">
-                  {["Home", "Experience", "Projects", "Education", "Skills", "Certificates"].map((item) => (
+                  {["Home", "Experience", "Hackathons", "Projects", "Education", "Skills", "Certificates"].map((item) => (
                     <button
                       key={item}
                       onClick={() => scrollToSection(item.toLowerCase())}
@@ -522,6 +621,94 @@ export default function Portfolio() {
           </div>
         </section>
 
+        <section id="hackathons" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+                Hackathons
+              </h2>
+              <p className="text-gray-400 text-lg">Competitive projects built under time constraints</p>
+            </div>
+
+            <div className="space-y-8">
+              {hackathons.map((hackathon, index) => (
+                <Card
+                  key={index}
+                  className="group bg-slate-800/50 border-slate-700/50 backdrop-blur-xl hover:bg-slate-800/70 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/10"
+                >
+                  <CardContent className="p-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 md:items-start">
+                      {/* Left half: logo + hackathon title (row), then project image */}
+                      <div className="flex flex-col gap-4 md:min-h-0">
+                        <div className="flex items-center gap-4">
+                          <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl overflow-hidden bg-slate-700/80 border border-slate-600/50 flex-shrink-0">
+                            <Image
+                              src={hackathon.logo || "/placeholder.svg"}
+                              alt={hackathon.title}
+                              width={64}
+                              height={64}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <h3 className="text-lg md:text-xl font-bold text-blue-400 group-hover:text-cyan-400 transition-colors leading-tight">
+                            {hackathon.title}
+                          </h3>
+                        </div>
+                        <div className="relative w-full aspect-square max-h-64 md:max-h-[280px] rounded-2xl overflow-hidden bg-gradient-to-br from-slate-700 to-slate-800 border border-slate-600/50 flex-shrink-0">
+                          <Image
+                            src={hackathon.projectImage || "/placeholder.svg"}
+                            alt={hackathon.projectTitle}
+                            width={400}
+                            height={400}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                      </div>
+                      {/* Right half: project title, description, buttons */}
+                      <div className="flex flex-col min-w-0">
+                        <h4 className="text-xl md:text-2xl font-semibold text-white leading-tight mb-3">
+                          {hackathon.projectTitle}
+                        </h4>
+                        <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1">
+                          {hackathon.projectDescription}
+                        </p>
+                        <div className="flex gap-3 mt-6 pt-4 border-t border-slate-700/50">
+                          <Link href={hackathon.demo} target="_blank" rel="noopener noreferrer">
+                            <Button
+                              size="sm"
+                              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white rounded-xl group/btn"
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                              Demo
+                            </Button>
+                          </Link>
+                          <Link href={hackathon.github} target="_blank" rel="noopener noreferrer">
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="border-slate-600 text-gray-300 hover:bg-slate-700/50 rounded-xl group/btn"
+                            >
+                              <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                              Code
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+              {hackathons.length === 0 && (
+                <Card className="bg-slate-800/50 border-slate-700/50 backdrop-blur-xl">
+                  <CardContent className="p-12 text-center">
+                    <p className="text-gray-400 text-lg">No hackathons added yet. Check back soon!</p>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+          </div>
+        </section>
+
         <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -601,14 +788,14 @@ export default function Portfolio() {
 
             <Card className="bg-slate-800/50 border-slate-700/50 backdrop-blur-xl p-8 max-w-5xl mx-auto hover:bg-slate-800/70 transition-all duration-500">
               <div className="flex items-start space-x-8">
-                <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-0.5 flex-shrink-0">
-                  <div className="w-full h-full bg-slate-800 rounded-2xl flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-0.5 flex-shrink-0 overflow-hidden">
+                  <div className="w-full h-full bg-slate-800 rounded-2xl overflow-hidden">
                     <Image
                       src={education.logo || "/placeholder.svg"}
                       alt={education.institution}
-                      width={60}
-                      height={60}
-                      className="rounded-lg"
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                 </div>
