@@ -195,6 +195,15 @@ export default function Portfolio() {
       github: "https://github.com/anumukul/Uniswap-v1-Clone",
       tags: ["NextJs", "Solidity", "Ethereum", "DeFi", "TypeScript", "Wagmi"],
     },
+    {
+      title: "NFT Forge",
+      description:
+        "Full-stack NFT collection platform with an ERC721 smart contract featuring four rarity tiers (Common, Rare, Epic, Legendary), whitelist and Dutch auction minting, and in-contract staking. Built with Solidity and OpenZeppelin; max supply 1000 with weighted random rarity, EIP-2981 royalties, pause and emergency stop. Next.js frontend (App Router, TypeScript, Tailwind, shadcn/ui) with RainbowKit/Wagmi for wallet connection, pages for mint (public/whitelist/auction), my NFTs, staking, collection, auction, stats, and owner admin dashboard. Deployed on Sepolia.",
+      image: "/NFTForge.png?height=200&width=400",
+      demo: "https://nft-forge-six.vercel.app/",
+      github: "https://github.com/anumukul/NFTForge",
+      tags: ["NextJs", "Solidity", "ERC721", "TypeScript", "Hardhat", "Wagmi"],
+    },
     
    
     
