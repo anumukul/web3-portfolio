@@ -724,7 +724,7 @@ export default function Portfolio() {
               <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
                 My Projects
               </h2>
-              <p className="text-gray-400 text-lg">Blockchain and Web2 applications</p>
+              <p className="text-gray-400 text-lg">Web3 Projects</p>
             </div>
 
             <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-8">
@@ -848,7 +848,7 @@ export default function Portfolio() {
               <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
                 Skills
               </h2>
-              <p className="text-gray-400 text-lg">Technical expertise across blockchain and web development</p>
+              <p className="text-gray-400 text-lg">Technical expertise across blockchain development</p>
             </div>
 
             <div className="max-w-4xl mx-auto">
